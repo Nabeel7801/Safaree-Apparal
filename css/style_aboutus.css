@@ -1,0 +1,137 @@
+#aboutus {
+    height: fit-content;
+    width: 100%;
+}
+
+.title {
+    margin-top: 50px;
+    padding: 10px 0;
+}
+
+.title h2 {
+    padding: 0;
+}
+
+.title p {
+    margin: 10px 0;
+}
+
+.section_about {
+    text-align: center;
+    padding-bottom: 8rem;
+    padding-top: 5rem;
+    background-image: url(../images/crossword.png);
+    background-attachment: fixed;
+}
+
+.section_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper_card {
+    width: 300px;
+    margin: 25px;
+}
+
+.section_title {
+    color: #129CF3;
+    font-size: 48px;
+    font-weight: 900;
+    padding-top: 2rem;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.fa-user,
+.fa-bicycle,
+.fa-location-arrow {
+    color: #333;
+    padding-bottom: 10px;
+    transition: .9s;
+}
+
+.fa-user:hover,
+.fa-bicycle:hover,
+.fa-location-arrow:hover {
+    color: #129CF3;
+    transition: 0.9s;
+}
+
+.banner {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../images/wood.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.banner_visual {
+    flex-basis: 40%;
+}
+
+.banner_visual img {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.banner_text {
+    flex-basis: 60%;
+    height: fit-content;
+    padding: 40px;
+    font-size: 22px;
+}
+
+.banner_text p {
+    line-height: 2;
+    color: white;
+}
+
+.firstcharacter {
+    position: relative;
+    top: -10px;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-left: 3px;
+    font-style: italic;
+    color: #fff;
+    float: left;
+    font-family: "Playfair Display", serif;
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 991px) {
+    .banner_text {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner_visual {
+        display: none;
+        flex-basis: 0;
+    }
+    .banner_text {
+        font-size: 20px;
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 479px) {
+    .banner_text {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,313 @@
+body {
+    background: url("../images/background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#shopnow_section {
+    display: flex;
+    height: 500px;
+}
+
+.shopnow {
+    width: 100%;
+    color: white;
+    font-family: sans-serif, 'Open Sans', 'Helvetica Neue';
+    font-weight: bold;
+    font-size: 26px;
+    text-transform: capitalize;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.shopnow p {
+    margin-bottom: 25px;
+}
+
+.custom_btn {
+    border: 4px solid white;
+    background: transparent;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.custom_btn:hover {
+    border-color: #000;
+    color: #000;
+}
+
+#top_products {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.product_section {
+    position: relative;
+    width: 90%;
+    margin: 30px auto;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px #000;
+    padding: 10px;
+}
+
+#products {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: fit-content;
+    background-color: #fff;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.product_card {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px #808080;
+    margin: 20px;
+}
+
+.imageHolder {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageHolder img {
+    max-width: 240px;
+    max-height: 250px;
+}
+
+.product_card p {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    color: #333;
+    margin: 0 10%;
+}
+
+.product_detail {
+    position: relative;
+    width: 80%;
+    margin: 0 10%;
+    margin-top: 20px;
+}
+
+.product_price {
+    font-size: 18px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.view_button {
+    position: absolute;
+    font-weight: bold;
+    color: gray;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    right: 0;
+    top: -6px;
+    cursor: pointer;
+}
+
+.view_button:hover {
+    background-color: #333;
+    color: white;
+}
+
+.section_about {
+    text-align: center;
+    padding: 20px 0;
+    background-image: url(../images/crossword.png);
+    background-attachment: fixed;
+    background-color: #fff;
+}
+
+.section_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.wrapper_card {
+    width: 300px;
+    margin: 25px;
+}
+
+#contactus {
+    width: 100%;
+    height: fit-content;
+    padding: 30px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.contactus_section {
+    width: 80%;
+    margin: 0 auto;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px #000;
+    padding: 10px;
+    padding-bottom: 70px;
+}
+
+.form_section {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.contact_form {
+    margin: 0 2.5%;
+}
+
+.contact_form div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact_form div input,
+.contact_form div textarea {
+    padding: 24px 20px 0;
+    border-color: #333;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #97a0af;
+    box-shadow: none;
+}
+
+.contact_form div .error {
+    display: none;
+    color: red;
+    font-weight: bold;
+}
+
+.contact_form div input {
+    margin-bottom: 15px;
+    padding: 24px 27px;
+}
+
+.contact_form div textarea {
+    margin-bottom: 28px;
+    min-height: 172px;
+    resize: none;
+}
+
+.contact_form div button {
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    padding: 17px 43px;
+    background: #E0877F;
+    border-radius: 40px;
+    font-weight: 600;
+    border-color: transparent;
+    transition: 0.3s;
+    border: 2px solid #fff;
+}
+
+.contact_form div button:hover {
+    background: none;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact_form div button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.section_title {
+    color: #129CF3;
+    font-size: 48px;
+    font-weight: 900;
+    padding-top: 2rem;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+@media (max-width: 767px) {
+    .shopnow p {
+        margin-bottom: 25px;
+        font-size: 24px;
+    }
+    .custom_btn {
+        border: 3px solid white;
+        font-size: 18px;
+        color: white;
+        padding: 8px;
+        border-radius: 4px;
+    }
+    .contactus_section,
+    .form_section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 479px) {
+    .shopnow p {
+        font-size: 22px;
+    }
+    .product_section {
+        padding: 0;
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    .product_card {
+        width: 270px;
+        height: 360px;
+    }
+    .imageHolder {
+        width: 270px;
+        height: 250px;
+    }
+
+    .imageHolder img {
+        max-width: 210px;
+        max-height: 230px;
+    }
+    .product_section .title h2 {
+        font-size: 22px;
+    }
+    #products {
+        width: 100%;
+    }
+    .product_card {
+        margin: 10px;
+    }
+    .contact_form div {
+        width: 100%;
+    }
+    .contact_form div button {
+        padding: 10px 25px;
+        border-radius: 20px;
+        transition: 0;
+    }
+    .contactus_section,
+    .form_section {
+        width: 95%;
+    }
+}

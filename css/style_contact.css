@@ -1,0 +1,113 @@
+#contact {
+    height: 400px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.form_section {
+    width: 90%;
+    display: flex;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+.map {
+    flex-basis: 40%;
+    margin: 0 2.5%;
+    padding-bottom: 50px;
+}
+
+.map #googleMap {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 300px;
+    background-color: gainsboro;
+}
+
+.contact_form {
+    flex-basis: 50%;
+    margin: 0 2.5%;
+}
+
+.contact_form div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact_form div .error {
+    display: none;
+    color: red;
+    font-weight: bold;
+}
+
+.contact_form div input,
+.contact_form div textarea {
+    padding: 24px 20px 0;
+    border-color: #333;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #97a0af;
+    box-shadow: none;
+}
+
+.contact_form div input {
+    margin-bottom: 15px;
+    padding: 24px 27px;
+}
+
+.contact_form div textarea {
+    margin-bottom: 28px;
+    min-height: 172px;
+    resize: none;
+}
+
+.contact_form div button {
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    padding: 17px 43px;
+    background: #E0877F;
+    border-radius: 40px;
+    font-weight: 600;
+    border-color: transparent;
+    transition: 0.3s;
+    border: 2px solid #fff;
+}
+
+.contact_form div button:hover {
+    background: none;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact_form div button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 768px) {
+    .map {
+        flex-basis: 100%;
+    }
+    .contact_form {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .map #googleMap {
+        width: 100%;
+    }
+    .contact_form div {
+        width: 100%;
+    }
+    .contact_form div button {
+        padding: 10px 25px;
+        border-radius: 20px;
+        transition: 0;
+    }
+}
